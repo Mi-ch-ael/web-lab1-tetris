@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tetris game</title>
+    <script src="js/business.js" type="text/javascript"></script>
+</head>
+<!--body onload="displayUsername(document.getElementById('username'));
+    init();"-->
+<body onload="displayUsername(document.getElementById('username'));
+    init();"
+    style="background-color: black; color: limegreen">
+<img src="https://fontmeme.com/permalink/210925/f076ce3078324bab7faebf8d6cfbf256.png" alt="TETRIX" border="0">
+<div style="float: left">
+    Current player: <label id="username"></label><br>
+    Score: <label id="score"></label><br>
+    Level: <label id="level"></label><br>
+    Next:<p>
+    <canvas id="canvasNext" width="175px" height="70px"></canvas>
+    <p>
+    Control keys:
+    <table border="3">
+    <tr>
+        <td>&leftarrow; / &rightarrow;</td><td>move piece horizontally</td>
+    </tr>
+    <tr>
+        <td>Space / &downarrow;</td><td>drop piece</td>
+    </tr>
+    <tr>
+        <td>&uparrow;</td><td>rotate piece clockwise</td>
+    </tr>
+    <tr>
+        <td>Left shift</td><td>rotate piece counter-clockwise</td>
+    </tr>
+    </table>
+    <!-- &leftarrow; / &rightarrow; &mdash; move piece horizontally;<br>
+    Space / &downarrow; &dash; drop piece;<br>
+    &uparrow; &dash; rotate piece clockwise;<br>
+    Left shift &dash; rotate piece counter-clockwise.-->
+</div>
+<div style="float: right">
+    <img src="media/image-dark.jpg">
+</div>
+<div>
+    <table>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><canvas id="canvasGame" width="350px" height="700px"></canvas></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+    </table>
+    <!--canvas id="canvasGame" width="150px" height="300px"></canvas>
+    <button onclick="document.getElementById('canvasGame').getContext('2d').fillRect(0,0,10,10)"></button-->
+</div>
+<small>Font used in title: <a href="https://fontmeme.com/matrix-font/">https://fontmeme.com/matrix-font/</a></small>
+</body>
+</html>
